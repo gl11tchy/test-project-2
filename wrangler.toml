@@ -1,0 +1,20 @@
+name = "test-project-2"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+main = "./worker/index.ts"
+
+[assets]
+not_found_handling = "single-page-application"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "test-project-2-db"
+database_id = ""
+
+[[r2_buckets]]
+binding = "STORAGE"
+bucket_name = "test-project-2-storage"
+
+[vars]
+ENVIRONMENT = "production"
+APP_URL = "https://test-project-2.spinitup.dev"
